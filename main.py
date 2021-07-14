@@ -29,7 +29,7 @@ def main():
         else:
             print('a song is playing!')
             osascript.osascript('set volume output volume 50')
-    time.sleep(1)
+        time.sleep(1)
 
 
 if __name__ == '__main__':
