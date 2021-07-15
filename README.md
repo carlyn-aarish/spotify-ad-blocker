@@ -80,7 +80,7 @@ current volume setting using osascript and set it to that
 
 
 ## Questions
-* How does an OAuth token expire? After a certain amount of time that Spotify is
-idle?
+* When does an OAuth token expire?
+    * After one hour
 
 
