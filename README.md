@@ -1,5 +1,11 @@
 # Spotify Ad Blocker
 
+## About
+Automatically mutes Spotify ads
+
+## User Story
+As a listener using Spotify, I want to avoid listenting to ads without paying for Premium
+
 ## How to Use
 1. Go to https://developer.spotify.com/console/get-users-currently-playing-track/
 1. Click `Get Token`
@@ -11,22 +17,19 @@
 1. In terminal, go to directory where program is saved
 1. Run `python main.py`
 
-## User Story
-As a listener using Spotify, I want to skip ads without paying for Premium
-
 ## Steps
 1. detect when an ad is playing
-1. skip add by either:
-    1. muting device while ad is playing
-    1. closing and reopening Spotify to skip
-    1. muting Spotify app audio and playing a local song while ad is playing
+1. muting device while ad is playing
 
+## Possible Future Iterations
+1. close and reopening Spotify to skip ads 
+1. mute Spotify app audio and playing a local song while ad is playing
 
 ## To Mute Device While Ad is Playing
 To mute MacOS speakers, need to be able to communicate with local processes on
 my OS.
 Can do this using [Applescript](https://wiki.python.org/moin/MacPython/AppleScript).
-To execute AppleScript from Python 3.6, you can use [osascript](https://ss64.com/osx/osascript.html).
+To execute AppleScript from Python 3.6, use [osascript](https://ss64.com/osx/osascript.html).
 
 ## Spotify API
 This is an example of a portion of what the [Spotify API](https://developer.spotify.com/console/get-users-currently-playing-track) returns if an ad is playing. `"item"` is `"null"` and `"currently_playing_type"` is `"ad"`
