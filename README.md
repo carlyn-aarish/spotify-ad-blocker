@@ -4,7 +4,7 @@
 Automatically mutes Spotify ads
 
 ## User Story
-As a listener using Spotify, I want to avoid listenting to ads without paying for Premium
+As a listener using Spotify, I want to avoid listenting to ads while using the free version
 
 ## How to Use
 1. Go to https://developer.spotify.com/console/get-users-currently-playing-track/
@@ -13,19 +13,19 @@ As a listener using Spotify, I want to avoid listenting to ads without paying fo
 1. Click `Request Token`
 1. Copy the generated OAuth Token
 1. Set `SPOTIFY_ACCESS_TOKEN` to the copied token in `main.py`
-1. Open Spotify app and start playing something
+1. Open Spotify app and start listening
 1. In terminal, go to directory where program is saved
 1. Run `python main.py`
+2. Enjoy music without ads
+3. Token expires after 1 hour
 
-## Steps
+## About the Script
+
+### Script Functions
 1. detect when an ad is playing
-1. muting device while ad is playing
+1. mute device while ad is playing
 
-## Possible Future Iterations
-1. close and reopening Spotify to skip ads 
-1. mute Spotify app audio and playing a local song while ad is playing
-
-## To Mute Device While Ad is Playing
+### Notes on muting on MacOS
 To mute MacOS speakers, need to be able to communicate with local processes on
 my OS.
 Can do this using [Applescript](https://wiki.python.org/moin/MacPython/AppleScript).
@@ -73,7 +73,11 @@ If a song is playing, then `"item"` has the song info, the `"currently_playing_t
 }
 ```
 
-## Possible Future Features
+### Possible Future Iterations of Scripts
+1. close and reopen Spotify to skip ads, rather than mute them 
+1. mute Spotify app audio and play a local song while ad is playing
+
+### Possible Future Features
 * instead of setting to a fixed volume when a track is playing, check the
 current volume setting using osascript and set it to that
 * automate getting the OAuth token when the script is run
@@ -82,7 +86,7 @@ current volume setting using osascript and set it to that
 * instead of muting device audio, mute Spotify app audio and play a song saved locally
 
 
-## Questions
+### Questions
 * When does an OAuth token expire?
     * After one hour
 
