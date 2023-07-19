@@ -1,4 +1,4 @@
-# Spotify Ad Blocker
+# Spotify Ad Muter
 
 ## About
 Automatically mutes Spotify ads
