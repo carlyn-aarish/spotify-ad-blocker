@@ -1,10 +1,7 @@
 # Spotify Ad Muter
 
 ## About
-Automatically mutes Spotify ads
-
-## User Story
-As a listener using Spotify, I want to avoid listenting to ads while using the free version
+Program mutes Spotify ads
 
 ## How to Use
 1. Go to https://developer.spotify.com/console/get-users-currently-playing-track/
